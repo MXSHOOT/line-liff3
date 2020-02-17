@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>LIFF Starter</title>
+        <title>LINE LIFF</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -107,24 +107,24 @@
         </div>
         <!-- LIFF ID ERROR -->
         <div id="liffIdErrorMessage" class="hidden">
-            <p>You have not assigned any value for LIFF ID.</p>
-            <p>If you are running the app using Node.js, please set the LIFF ID as an environment variable in your Heroku account follwing the below steps: </p>
+            <p>anda tidak bisa assigned any value for LIFF ID.</p>
+            <p>jika ingin running the app using Node.js, tolong set  LIFF ID terhadap environment variable di account Heroku anda lalu ikuti step by stepnya: </p>
             <code id="code-block">
                 <ol>
-                    <li>Go to `Dashboard` in your Heroku account.</li>
-                    <li>Click on the app you just created.</li>
-                    <li>Click on `Settings` and toggle `Reveal Config Vars`.</li>
-                    <li>Set `MY_LIFF_ID` as the key and the LIFF ID as the value.</li>
-                    <li>Your app should be up and running. Enter the URL of your app in a web browser.</li>
+                    <li>Buka `Dashboard` di akun Heroku .</li>
+                    <li>klik app lalu klik created.</li>
+                    <li>klik `Settings` dan cari `Reveal Config Vars`.</li>
+                    <li>masukkan `MY_LIFF_ID` untuk key nya dan value atau nilai, masukkan LIFF ID (cth : 165X856817-X8GXXVNr  ada di url LIFF).</li>
+                    <li>kalau sudah, coba refresh kembali web nya.</li>
                 </ol>
             </code>
-            <p>If you are using any other platform, please add your LIFF ID in the <code>index.html</code> file.</p>
-            <p>For more information about how to add your LIFF ID, see <a href="https://developers.line.biz/en/reference/liff/#initialize-liff-app">Initializing the LIFF app</a>.</p>
+            <p>jika belum bergabung, tolong gabung LIFF ID di sini <code>index.html</code> file.</p>
+            <p>untuk info lebih lengkap bisa check LIFF ID, disini <a href="https://developers.line.biz/en/reference/liff/#initialize-liff-app">Initializing the LIFF app</a>.</p>
         </div>
         <!-- LIFF INIT ERROR -->
         <div id="liffInitErrorMessage" class="hidden">
-            <p>Something went wrong with LIFF initialization.</p>
-            <p>LIFF initialization can fail if a user clicks "Cancel" on the "Grant permission" screen, or if an error occurs in the process of <code>liff.init()</code>.</p>
+            <p>ada masalah terhadap LIFF initialization.</p>
+            <p>LIFF initialization gagal jika user klik "Cancel" di "Grant permission" screen, atau jika terjadi error occurs di the process of <code>liff.init()</code>.</p>
         </div>
         <!-- NODE.JS LIFF ID ERROR -->
         <div id="nodeLiffIdErrorMessage" class="hidden">
