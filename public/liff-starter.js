@@ -124,9 +124,7 @@ function registerButtonHandlers() {
         if (!liff.isInClient()) {
             sendAlertIfNotInClient();
         } else {
-liff.sendMessages([ 
-    
-             {
+liff.sendMessages([ {
             "type": "template",
             "altText": "this is a carousel template",
             "template": {
@@ -145,8 +143,7 @@ liff.sendMessages([
                 }],
                 "imageAspectRatio": "rectangle"
             }
-        }
-            ]).then(function() {
+        }]).then(function() {
                 window.alert('Message sent');
             }).catch(function(error) {
                 window.alert('Error sending message: ' + error);
