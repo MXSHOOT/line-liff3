@@ -129,11 +129,8 @@ liff.sendMessages([
              {
                 type:'text',
                 text:'Halo, Dicoding!'
-              }
-             {
-                type:'text',
-                text:'Halo, dico!'
-              }
+             }
+    
             ]).then(function() {
                 window.alert('Message sent');
             }).catch(function(error) {
