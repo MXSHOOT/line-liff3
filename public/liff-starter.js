@@ -119,34 +119,21 @@ function registerButtonHandlers() {
         }
     });
 
-    // sendMessages call
+        // sendMessages call
     document.getElementById('sendMessageButton').addEventListener('click', function() {
         if (!liff.isInClient()) {
             sendAlertIfNotInClient();
         } else {
-liff.sendMessages([ 
-    {
-            "type": "template",
-            "altText": "this is a carousel template",
-            "template": 
-        {
-                "type": "carousel",
-                "columns": 
-            [{
-                    "title": "Clumsy Bird Master",
-                    "text": "game ini dibuat oleh dev : ellisonleao ada di github",
-                    "actions": 
-                [{
-                            "type": "uri",
-                            "label": "LIFF APP",
-                            "uri": "line://app/1653856817-V248nJg3"
-                        }
-                    ],
-                    "thumbnailImageUrl": "https://upload.wikimedia.org/wikipedia/id/d/db/Flappy_Bird_logo.jpg"
-                }],
-                "imageAspectRatio": "rectangle"
-            }
-}]
+            liff.sendMessages([{
+                'type': 'text',
+                'text': "Pesan anda sudah berhasil".
+            }]).then(function() {
+                window.alert('Message sent');
+            }).catch(function(error) {
+                window.alert('Error sending message: ' + error);
+            });
+        }
+    });
     // scanCode call
     document.getElementById('scanQrCodeButton').addEventListener('click', function() {
         if (!liff.isInClient()) {
