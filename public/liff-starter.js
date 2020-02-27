@@ -119,21 +119,38 @@ function registerButtonHandlers() {
         }
     });
 
-        // sendMessages call
+ // sendMessages call
     document.getElementById('sendMessageButton').addEventListener('click', function() {
         if (!liff.isInClient()) {
             sendAlertIfNotInClient();
         } else {
-            liff.sendMessages([{
-                'type': 'text',
-                'text': "Pesan anda sudah berhasil".
-            }]).then(function() {
-                window.alert('Message sent');
+            liff.sendMessages([ {
+            "type": "template",
+            "altText": "this is a carousel template",
+            "template": {
+                "type": "carousel",
+                "columns": [{
+                    "title": "New Open Store",
+                    "text": "Opening Event",
+                    "actions": [
+                        {
+                            "type": "uri",
+                            "label": "LIFF APP",
+                            "uri": "line://app/1508489527-8gy7JjJM?v=2"
+                        }
+                    ],
+                    "thumbnailImageUrl": "https://ssl.pstatic.net/linefriends/wp-content/uploads/2017/03/char_choco_name.png"
+                }],
+                "imageAspectRatio": "rectangle"
+            }
+        }]).then(function() {
+                window.alert('Ini adalah pesan dari fitur Send Message');
             }).catch(function(error) {
                 window.alert('Error sending message: ' + error);
             });
         }
     });
+    
     // scanCode call
     document.getElementById('scanQrCodeButton').addEventListener('click', function() {
         if (!liff.isInClient()) {
