@@ -124,16 +124,19 @@ function registerButtonHandlers() {
         if (!liff.isInClient()) {
             sendAlertIfNotInClient();
         } else {
-liff.sendMessages([ {
+liff.sendMessages([ 
+    {
             "type": "template",
             "altText": "this is a carousel template",
-            "template": {
+            "template": 
+        {
                 "type": "carousel",
-                "columns": [{
+                "columns": 
+            [{
                     "title": "Clumsy Bird Master",
                     "text": "game ini dibuat oleh dev : ellisonleao ada di github",
-                    "actions": [
-                        {
+                    "actions": 
+                [{
                             "type": "uri",
                             "label": "LIFF APP",
                             "uri": "line://app/1653856817-V248nJg3"
@@ -143,7 +146,7 @@ liff.sendMessages([ {
                 }],
                 "imageAspectRatio": "rectangle"
             }
-
+}]
     // scanCode call
     document.getElementById('scanQrCodeButton').addEventListener('click', function() {
         if (!liff.isInClient()) {
