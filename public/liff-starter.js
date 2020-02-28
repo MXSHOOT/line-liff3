@@ -130,16 +130,21 @@ function registerButtonHandlers() {
             "template": {
                 "type": "carousel",
                 "columns": [{
-                    "title": "New Open Store",
-                    "text": "Opening Event",
+                    "title": "Referensi",
+                    "text": "Dicoding dan rojoinferno",
                     "actions": [
                         {
                             "type": "uri",
-                            "label": "LIFF APP",
-                            "uri": "line://app/1508489527-8gy7JjJM?v=2"
+                            "label": "Dicoding",
+                            "uri": "https://www.dicoding.com/"
+                        }
+                        {
+                            "type": "uri",
+                            "label": "Rojoinferno",
+                            "uri": "http://www.rojoinferno.com/"
                         }
                     ],
-                    "thumbnailImageUrl": "https://ssl.pstatic.net/linefriends/wp-content/uploads/2017/03/char_choco_name.png"
+                    "thumbnailImageUrl": "https://clueylearning.com.au/wp-content/uploads/2019/08/most-effective-way-to-study-according-to-science.jpg"
                 }],
                 "imageAspectRatio": "rectangle"
             }
